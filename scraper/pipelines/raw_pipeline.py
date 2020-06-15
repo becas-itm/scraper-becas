@@ -1,4 +1,4 @@
-from itm.documents import connect_db, RawScholarship
+from scraper.documents import connect_db, RawScholarship
 
 
 class RawPipeline:

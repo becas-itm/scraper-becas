@@ -1,13 +1,11 @@
 import scrapy
 
-from etl.common import Language
-from etl.common.entities import EntityName
-
+from scraper.common import Language
 from scraper.item_builder import ItemBuilder
 
 
 class Daad(scrapy.Spider):
-    name = EntityName.DAAD.value
+    name = 'daad'
 
     allowed_domains = ['www.daad.co']
 
