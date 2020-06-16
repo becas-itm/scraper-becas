@@ -1,0 +1,14 @@
+language: python
+
+python:
+  - "3.8.0"
+
+env:
+  - PYTHONPATH=.
+
+install:
+  - pip install -r dev_requirements.txt
+
+script:
+  - flake8 scraper tests
+  - pytest tests
